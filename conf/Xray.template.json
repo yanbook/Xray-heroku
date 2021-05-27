@@ -17,6 +17,33 @@
         ]
     },
     "inbounds": [
+     {
+      "port": 33801,
+      "listen": "0.0.0.0",
+      "protocol": "vmess",
+      "settings": {
+        "clients": [
+          {
+            "id": "e0e0743c-0e71-4ef6-8862-c4f7a4d0f82e"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "none",
+        "tcpSettings": {
+          "acceptProxyProtocol": true,
+          "header": {
+            "type": "http",
+            "request": {
+              "path": [
+                "/vmesstotcp"
+              ]
+            }
+          }
+        }
+      }
+    },
         {
             "listen": "0.0.0.0",
             "port": 12345,
